@@ -1,0 +1,58 @@
+.gh_members_showoff_widget {
+	padding: 15px;
+	margin-bottom: 20px;
+	border: 1px solid #ddd;
+	background-color: #fff;
+	border-radius: 3px;
+}
+
+.gh_members_showoff_widget .org-members-title {
+	margin-bottom: 0;
+	border-bottom: 0;
+	color: #333;
+}
+
+.gh_members_showoff_widget .org-module-title {
+	margin: -15px -15px 0;
+	font-size: 18px;
+	border-bottom: 1px solid #eee;
+}
+
+.gh_members_showoff_widget .org-members-title a,
+.gh_members_showoff_widget .org-members-title a:visited {
+	color: #333;
+	text-decoration: none;
+}
+.gh_members_showoff_widget .org-members-title a:hover {
+	color: #4183c4;
+	text-decoration: none;
+}
+
+.gh_members_showoff_widget .org-module-link {
+	display: block;
+	padding: 15px;
+	color: #333;
+}
+
+.gh_members_showoff_widget .org-stats {
+	margin-top: 3px;
+	float: right;
+	font-size: 14px;
+	color: #999;
+}
+
+.gh_members_showoff_widget .member-avatar {
+	display: inline-block;
+}
+
+.gh_members_showoff_widget .tooltipped {
+	position: relative;
+}
+
+.gh_members_showoff_widget .member-avatar-img {
+	display: block;
+	width: 48px;
+	height: 48px;
+	border-radius: 3px;
+	box-shadow: none;
+}

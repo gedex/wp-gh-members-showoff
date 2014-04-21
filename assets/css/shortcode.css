@@ -1,0 +1,104 @@
+.gh-members-showoff-shortcode {
+	widows: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.gh-members-showoff-shortcode:before,
+.gh-members-showoff-shortcode:after {
+	content: " ";
+	display: table;
+}
+
+.gh-members-showoff-shortcode a {
+	text-decoration: none;
+}
+
+.gh-members-showoff-shortcode .orgs-nav {
+	float: right;
+	margin-bottom: -20px;
+}
+.gh-members-showoff-shortcode .orgs-nav .org-nav-item.selected {
+	color: #333;
+}
+.gh-members-showoff-shortcode .orgs-nav .org-nav-item .count {
+	display: inline-block;
+	margin-left: 5px;
+	padding: 2px 5px 3px;
+	color: #666;
+	font-size: 10px;
+	font-weight: bold;
+	background-color: #e5e5e5;
+	border-radius: 10px;
+	line-height: 1;
+}
+
+.gh-members-showoff-shortcode .org-title {
+	margin-top: 4px;
+	font-size: 20px;
+	line-height: 1;
+	font-weight: normal;
+	text-decoration: none;
+	color: #777;
+}
+.gh-members-showoff-shortcode .org-title .org-link {
+	color: #333;
+}
+.gh-members-showoff-shortcode .org-title .org-link:hover {
+	color: #4183c4;
+}
+.gh-members-showoff-shortcode .org-title .org-link .avatar {
+	float: left;
+	height: 30px;
+	width: 30px;
+	margin-top: -5px;
+	margin-bottom: -1px;
+	margin-right: 9px;
+	border-radius: 3px;
+	border: 0;
+	box-shadow: none;
+}
+
+.gh-members-showoff-shortcode .member-listing {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	color: #999999;
+	border-bottom: 1px solid #e5e5e5;
+}
+.gh-members-showoff-shortcode .member-list-item {
+	position: relative;
+	list-style: none;
+	display: table-row;
+}
+.gh-members-showoff-shortcode .member-info {
+	display: table-cell;
+	position: relative;
+	vertical-align: middle;
+	padding: 10px 0;
+	padding-left: 0;
+	font-size: 14px;
+	font-weight: bold;
+	border-top: 1px solid #eee;
+}
+.gh-members-showoff-shortcode .member-info .member-link {
+	display: block;
+}
+.gh-members-showoff-shortcode .member-info a {
+	color: #333;
+}
+.gh-members-showoff-shortcode .member-info .member-list-avatar {
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin-right: 15px;
+	border-radius: 3px;
+	border: 0;
+	box-shadow: none;
+}
+.gh-members-showoff-shortcode .member-info .member-username {
+	display: block;
+}
+.gh-members-showoff-shortcode .member-info .member-fullname {
+	font-weight: normal;
+	color: #777;
+}
