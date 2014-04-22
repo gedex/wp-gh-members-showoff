@@ -85,12 +85,19 @@ class WordPress_Readme_Parser {
 
 		$general_section_formatter = function ( $body ) use ( $params ) {
 			$body = preg_replace(
+				'/^`$/m',
+				'```',
+				$body
+			);
+			$body = preg_replace(
 				'#\[youtube\s+(?:http://www\.youtube\.com/watch\?v=|http://youtu\.be/)(.+?)\]#',
 				'[![Play video on YouTube](http://i1.ytimg.com/vi/$1/hqdefault.jpg)](http://www.youtube.com/watch?v=$1)',
 				$body
 			);
 			return $body;
 		};
+
+		$path = $this->path;
 
 		// Parse sections
 		$section_formatters = array(
@@ -100,7 +107,7 @@ class WordPress_Readme_Parser {
 				}
 				return $body;
 			},
-			'Screenshots' => function ( $body ) {
+			'Screenshots' => function ( $body ) use ( $path ) {
 				$body = trim( $body );
 				$new_body = '';
 				if ( ! preg_match_all( '/^\d+\. (.+?)$/m', $body, $screenshot_matches, PREG_SET_ORDER ) ) {
@@ -110,7 +117,7 @@ class WordPress_Readme_Parser {
 					$img_extensions = array( 'jpg', 'gif', 'png' );
 					foreach ( $img_extensions as $ext ) {
 						$filepath = sprintf( 'assets/screenshot-%d.%s', $i + 1, $ext );
-						if ( file_exists( dirname( $this->path ) . DIRECTORY_SEPARATOR . $filepath ) ) {
+						if ( file_exists( dirname( $path ) . DIRECTORY_SEPARATOR . $filepath ) ) {
 							break;
 						}
 						else {
